@@ -1,0 +1,23 @@
+/* ===== footer ===== */
+.footer {
+    display: flex;
+    background-color: #EAE7B1;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
+    align-items: center;
+    /* margin-top: 20px; */
+    box-sizing: border-box;
+}
+
+.medsos ul {
+    display: flex;
+    list-style: none;
+    /* background-color: white; */
+    width: 200px;
+    justify-content: space-between;
+}
+
+.medsos ul img {
+    width: 30px;
+}
+/* ===== footer ===== */
