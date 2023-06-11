@@ -21,15 +21,15 @@
         <div class="aside">
             <!-- begin::menu-link -->
             <div class="menu-link">
-                <h2 class="menu-title"><a href="">Dashboard</a></h2>
+                <h2 class="menu-title"><a href="../dashboard-admin">Dashboard</a></h2>
             </div>
             <!-- end::menu-link -->
             <!-- begin::menu-link -->
             <div class="menu-link">
                 <!-- begin::menu-sub -->
-                <h2 class="menu-title"><a href="">Master</a></h2>
-                <a href="../kategori-admin"><img src="" alt="sym">Kategori</a><br>
-                <a href="../projek-admin"><img src="" alt="sym">Projek</a>
+                <h2 class="menu-title"><a href="../kategori-admin">Master</a></h2>
+                <a href="../kategori-admin">Kategori</a><br>
+                <a href="../projek-admin">Projek</a>
                 <!-- end::menu-sub -->
             </div>
             <!-- end::menu-link -->
@@ -37,8 +37,8 @@
             <div class="menu-link">
                 <!-- begin::menu-sub -->
                 <h2 class="menu-title"><a href="">Referensi</a></h2>
-                <a href=""><img src="" alt="sym">Donatur</a><br>
-                <a href=""><img src="" alt="sym">Daftar Donatur</a>
+                <a href="">Donatur</a><br>
+                <a href="">Daftar Donatur</a>
                 <!-- end::menu-sub -->
             </div>
             <!-- end::menu-link -->
@@ -46,8 +46,8 @@
             <div class="menu-link">
                 <!-- begin::menu-sub -->
                 <h2 class="menu-title"><a href="">Informasi</a></h2>
-                <a href=""><img src="" alt="sym">Kotak Masuk</a><br>
-                <a href=""><img src="" alt="sym">Subscriber</a>
+                <a href="">Kotak Masuk</a><br>
+                <a href="">Subscriber</a>
                 <!-- end::menu-sub -->
             </div>
             <!-- end::menu-link -->
@@ -76,6 +76,7 @@
         <div class="content-main">
             @yield('kategori-admin')
             @yield('projek-admin')
+            @yield('dashboard-admin')
         </div>
         <!-- end::content -->
     </div>

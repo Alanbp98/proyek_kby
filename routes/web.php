@@ -49,9 +49,7 @@ Route::get('/pilih-kategori', function () {
     return view('pilih-kategori');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-});
+
 
 Route::get('/index', function () {
     return view('index');
@@ -65,9 +63,7 @@ Route::get('/pilih-pembayaran', function () {
     return view('pilih-pembayaran');
 });
 
-Route::get('/main1', function () {
-    return view('main1');
-});
+
 
 Route::get('/main2', function () {
     return view('main2');
@@ -92,6 +88,22 @@ Route::get('/footer', function () {
 
 Route::get('/kategori-admin', function () {
     return view('kategori-admin');
+});
+
+Route::get('/navbar1', function () {
+    return view('partials\navbar1');
+});
+
+Route::get('/about', function () {
+    return view('partials\about');
+});
+
+Route::get('/main1', function () {
+    return view('layouts\main1');
+});
+
+Route::get('/dashboard-admin', function () {
+    return view('dashboard-admin');
 });
 
 //permanen route
