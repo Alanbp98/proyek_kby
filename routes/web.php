@@ -17,12 +17,24 @@ Route::get('/landing-page', function () {
     return view('landing-page');
 });
 
+Route::get('/', function () {
+    return view('landing-page');
+});
+
 Route::get('/sign-up', function () {
     return view('sign-up');
 });
 
+Route::get('/register', function () {
+    return view('register');
+});
+
 Route::get('/sign-in', function () {
     return view('sign-in');
+});
+
+Route::get('/login', function () {
+    return view('login');
 });
 
 Route::get('/reset-password', function () {
@@ -105,6 +117,12 @@ Route::get('/main1', function () {
 Route::get('/dashboard-admin', function () {
     return view('dashboard-admin');
 });
+
+// Route::group([
+//     function () {
+//         Route::resource('/kategori-admin', CategoryController::class);
+//     }
+// ]);
 
 //permanen route
 Route::get('/kategori-admin', function () {

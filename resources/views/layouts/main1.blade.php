@@ -9,7 +9,7 @@
 </head>
 <body>
     {{-- begin::navbar --}}
-    @include('partials.navbar1')
+    @include('layouts.partials.navbar1')
     {{-- end::navbar --}}
 
     {{-- begin::konten --}}
@@ -17,11 +17,11 @@
     {{-- end::konten --}}
 
     {{-- begin::about --}}
-    @include('partials.about')
+    @include('layouts.partials.about')
     {{-- begin::about --}}
 
     {{-- begin::footer --}}
-    @include('partials.footer')
+    @include('layouts.partials.footer')
     {{-- begin::footer --}}
 </body>
 </html>

@@ -5,15 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Admin</title>
+    <title>{{ config('app.name') }} | @yield('title')</title>
     <link rel="stylesheet" href="../assets/css/layouts-css/admin.css">
+    <link rel="stylesheet" href="../assets/css/dashboard-admin.css">
+    <link rel="stylesheet" href="../assets/css/kategori-admin.css">
+    <link rel="stylesheet" href="../assets/css/projek-admin.css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <!-- end::head -->
 <!-- begin::body -->
 <body>
     <!-- begin::main -->
     {{-- begin::navbar --}}
-    @include('partials.dashboard-navbar')
+    @include('layouts.partials.dashboard-navbar')
     {{-- end::navbar --}}
     <!-- begin::container -->
     <div class="container">
@@ -74,24 +83,21 @@
         <!-- end::aside -->
         <!-- begin::content -->
         <div class="content-main">
-            @yield('kategori-admin')
-            @yield('projek-admin')
-            @yield('dashboard-admin')
+            @yield('content')
         </div>
         <!-- end::content -->
     </div>
     <!-- end::container -->
     <!--begin::footer-->
-    @include('partials.footer')
+    @include('layouts.partials.footer')
     <!--end::footer-->
 
     <!-- end::main -->
 
     {{-- begin::script --}}
-    <script>
-        
-    </script>
+    
     {{-- end::script --}}
+
     
 </body>
 <!-- end::body -->
