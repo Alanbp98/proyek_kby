@@ -28,7 +28,7 @@
     <!-- begin::container -->
     <div class="container">
         <!-- begin::aside -->
-        @include('layouts.partials.sidebar')
+        @include('layouts.partials.sidebar2')
         <!-- end::aside -->
         <!-- begin::content -->
         <div class="content-main">

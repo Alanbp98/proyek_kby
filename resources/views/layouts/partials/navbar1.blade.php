@@ -20,8 +20,25 @@
             <img src="assets/img/Logo KBY.png" alt="">
         </div>
         <ul>
-            <li><a href="sign-up">Sign Up</a></li>
-            <li><a href="sign-in">Sign In</a></li>
+            @if (!Auth::check())
+                <li><a href="register">Sign Up</a></li>
+                <li><a href="login">Sign In</a></li>
+            @endif
+            @if (Auth::check())
+            <li>
+                <img src="../assets/img/profile.png" alt="" style="width: 10px">
+                <a href="">Profile</a>
+            </li>
+            <li>
+                <form action="{{ route('logout') }}" method="post" id="form-logout">
+                <a href="#" onclick="document.querySelector('#form-logout').submit()">
+                    <img src="../assets/img/logout.png" alt="" style="width: 10px">
+                    Keluar
+                </a>
+                @csrf
+                </form>
+            </li>
+            @endif
         </ul>
     </nav>
     <!-- end::navbar -->

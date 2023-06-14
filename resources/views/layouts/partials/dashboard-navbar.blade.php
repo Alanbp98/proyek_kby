@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Admin Navbar</title>
-    <link rel="stylesheet" href="../assets/css/partials-css/dashboard-navbar.css">
-</head>
-<body>
-    <!-- begin::navbar -->
+<!-- begin::navbar -->
 <nav>
     <div class="logo">
         <img src="../assets/img/Logo KBY.png" alt="">
@@ -16,10 +6,16 @@
     <ul>
         <li>
             <img src="../assets/img/profile.png" alt="">
-            <a href="">Profile</a>
+            <p>{{ auth()->user()->name }}</p>
         </li>
         <li>
-            <a href="../landing-page"><img src="../assets/img/logout.png" alt=""></a>
+            <form action="{{ route('logout') }}" method="post" id="form-logout">
+            <a href="#" onclick="document.querySelector('#form-logout').submit()">
+                <img src="../assets/img/logout.png" alt="">
+                Keluar
+            </a>
+            @csrf
+            </form>
         </li>
     </ul>
 </nav>

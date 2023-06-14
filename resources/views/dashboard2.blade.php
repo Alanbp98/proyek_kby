@@ -1,6 +1,6 @@
-@extends('layouts.admin')
+@extends('layouts.admin2')
 
-@section('title', 'Dashboard Admin')
+@section('title', 'Dashboard Donatur')
 
 @section('content')
 {{-- begin::dashboard-admin --}}
