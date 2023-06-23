@@ -10,35 +10,15 @@
 <body>
     <div class="container">
         <div class="col-poster">
-            <div class="logo">
-                <img src="assets/img/Logo KBY.png" alt="" width="100px">
-            </div>
             <div class="ayat">
-                <p>
-                    " Karena sesungguhnya <br>
-                    sesudah kesulitan itu ada <br>
-                    kemudahan, sesungguhnya <br>
-                    sesudah kesulitan itu ada <br>
-                    kemudahan." <br>
-                    (Q.S Al-Insyirah: 5-6)
-                </p>
-            </div>
-            <div class="login-img">
-                <img src="assets/img/sign-up.jpeg" alt="">
+                <h1>
+                    ApotekAI
+                </h1>
             </div>
         </div>
         <div class="col-form">
             <div class="card">
                 <h1>Masuk</h1>
-                <!--begin::Google link=-->
-                <div class="logo_google">
-                    <a href="" class="btn-google">
-                        <img src="assets/img/google.png" width="50px" alt="Google Logo" class="google-logo">
-                        <span>Masuk dengan Google</span>
-                    </a>
-                </div>
-                <!--end::Google link=-->
-                <p>atau masuk dengan</p>
                 {{-- begin::form --}}
                 <div class="form-login">
                     <form action="login" method="post">
@@ -61,7 +41,7 @@
                     </form>
                     <br>
                     <div class="navigasi-login">
-                        <small>Belum Punya Akun? <a href="register">Daftar Sekarang!</a></small>
+                        <small><a href=""></a></small>
                         <small><a href="">Lupa Password</a></small>
                     </div>
                 </div>

@@ -16,12 +16,12 @@ use App\Http\Controllers\DonaturController;
 |
 */
 
-Route::get('/landing-page', function () {
-    return view('landing-page');
+Route::get('/', function () {
+    return view('login');
 });
 
-Route::get('/', function () {
-    return view('landing-page');
+Route::get('/adminbaru', function () {
+    return view('layouts.adminbaru');
 });
 
 // route permanen
