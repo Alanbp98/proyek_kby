@@ -41,7 +41,7 @@
             {{-- <li class="sidebar-title">Menu</li> --}}
             
             <li
-                class="sidebar-item active ">
+                class="sidebar-item {{ request()->is('dashboard*') ? 'active' : '' }} ">
                 <a href="/" class='sidebar-link'>
                     <i class="bi bi-grid-fill"></i>
                     <span>Beranda</span>
@@ -97,17 +97,20 @@
                 </a>
                 <ul class="submenu ">
                     <li class="submenu-item ">
-                        <a href="layout-default.html">Informasi Member</a>
+                        <a href="kelolachat-peg">Informasi Member</a>
                     </li>
                 </ul>
             </li>
 
             <li
-                class="sidebar-item">
-                <a href="/" class='sidebar-link'>
+            class="sidebar-item">
+            <form action="{{ route('logout') }}" method="post" id="form-logout">
+                <a class='sidebar-link' href="#" onclick="document.querySelector('#form-logout').submit()">
                     <i class="bi bi-grid-fill"></i>
                     <span>Keluar</span>
                 </a>
+                @csrf
+            </form>
             </li>
             
         </ul>
@@ -122,10 +125,8 @@
             </header>
             
             {{-- begin::content --}}
-            <div class="page-heading">
-                <h3>Beranda</h3>
-            </div>
-            @yield('conten')
+            @yield('page-title')
+            @yield('content')
             {{-- end::content --}}
 
             <footer>

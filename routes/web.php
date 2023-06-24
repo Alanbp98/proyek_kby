@@ -50,3 +50,9 @@ Route::middleware(['auth', 'role:donatur'])->group(function () {
     // Route::get('/donatur/donations', [DonaturController::class, 'donations']);
     // ...
 });
+
+// route sementara
+Route::get('/kelolachat-peg', function () {
+    return view('kelolachat-peg');
+});
+// route sementara

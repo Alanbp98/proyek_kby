@@ -2,8 +2,13 @@
 
 @section('title', 'Admin')
 
+@section('page-title')
+<div class="page-heading">
+    <h3>Beranda Admin</h3>
+</div>
+@endsection
+
 @section('content')
-<p>Ini adalah dashboard admin</p>
 <div class="page-content">
     <section class="row">
         <div class="col-12 col-lg-9">
