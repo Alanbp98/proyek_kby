@@ -20,10 +20,6 @@ Route::get('/', function () {
     return view('login');
 });
 
-Route::get('/adminbaru', function () {
-    return view('layouts.adminbaru');
-});
-
 // route permanen
 // Rute autentikasi
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login')->middleware('guest');
@@ -34,25 +30,29 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::middleware(['auth', 'role:admin'])->group(function () {
     // Rute-rute yang hanya dapat diakses oleh pengguna dengan peran "admin"
     Route::get('/dashboard-admin', [AdminController::class, 'dashboard'])->name('dashboard');
-    // Route::get('/dashboard', function() {
-    //     return view('dashboard');   
-    // })->name('dashboard');
     // Route::get('/admin/users', [AdminController::class, 'users']);
-    // ...
 });
 
 Route::middleware(['auth', 'role:donatur'])->group(function () {
     // Rute-rute yang hanya dapat diakses oleh pengguna dengan peran "donatur"
     Route::get('/dashboard-donatur', [DonaturController::class, 'dashboard2'])->name('dashboard2');
-    // Route::get('/dashboard', function() {
-    //     return view('dashboard');
-    // })->name('dashboard');
     // Route::get('/donatur/donations', [DonaturController::class, 'donations']);
-    // ...
 });
 
 // route sementara
 Route::get('/kelolachat-peg', function () {
     return view('kelolachat-peg');
+});
+
+Route::get('/index', function () {
+    return view('index');
+});
+
+Route::get('/admin2', function () {
+    return view('layouts.admin2');
+});
+
+Route::get('/member-table', function () {
+    return view('member-table');
 });
 // route sementara
