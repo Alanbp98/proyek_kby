@@ -20,56 +20,23 @@
                 <span>Data Master</span>
             </a>
             <ul class="submenu ">
-                <li class='sidebar-title'>Data Obat</li>
                 <li>
-                    <a href="">Buat Data Obat</a>
+                    <a href="">Data Obat</a>
                 </li>                       
                 <li>
-                    <a href="">Ubah Data Obat</a>
+                    <a href="">Data Pegawai</a>
                 </li>                        
                 <li>
-                    <a href="">Lihat Data Obat</a>
-                </li>
-
-                <li class='sidebar-title'>Data Pegawai</li>
-                <li>
-                    <a href="">Buat Data Pegawai</a>
-                </li>                       
-                <li>
-                    <a href="">Buat Data Pegawai</a>
-                </li>                        
-                <li>
-                    <a href="">Lihat Data Pegawai</a>
-                </li>
-                
-                <li class='sidebar-title'>Data Member</li>
-                <li>
-                    <a href="">Ubah Data Member</a>
-                </li>
-                
-                <li>
-                    <a href="">Mutasi Data Member</a>
-                </li>
-                
-                <li>
-                    <a href="">Lihat Data Member</a>
+                    <a href="">Data Member</a>
                 </li>
             </ul>
         </li>
 
-        <li class="sidebar-item  has-sub">
+        <li class="sidebar-item ">
             <a href="#" class='sidebar-link'>
                 <i data-feather="briefcase" width="20"></i> 
                 <span>Rekap Pembelian</span>
             </a>
-            <ul class="submenu ">   
-                <li>
-                    <a href="component-extra-avatar.html">Pembelian</a>
-                </li>                       
-                <li>
-                    <a href="component-extra-divider.html">Rekap Pembelian</a>
-                </li>      
-            </ul>
         </li>
                 
         <li class="sidebar-item  has-sub">
@@ -79,15 +46,11 @@
             </a>                   
             <ul class="submenu ">                        
                 <li>
-                    <a href="form-element-input.html">Informasi Pegawai</a>
+                    <a href="form-element-input.html">History Chat</a>
                 </li>
                 
                 <li>
-                    <a href="form-element-input-group.html">Buat Template Chat</a>
-                </li>
-                
-                <li>
-                    <a href="form-element-select.html">Update Template Chat</a>
+                    <a href="form-element-input-group.html">Template Chat</a>
                 </li>
             </ul>                    
         </li>      

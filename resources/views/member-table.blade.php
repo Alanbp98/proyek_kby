@@ -25,7 +25,7 @@
 <section class="section">
     <div class="card">
         <div class="card-body">
-            {{-- begin::search --}}
+            {{-- begin::filter & search --}}
             <div class="dataTable-top">
                 <div class="dataTable-dropdown">
                     <select class="dataTable-selector form-select">
@@ -41,7 +41,7 @@
                     <input class="dataTable-input" placeholder="Search..." type="text">
                 </div>
             </div>
-            {{-- end::search --}}
+            {{-- end::filter & search --}}
 
             {{-- begin::table --}}
             <table class='table table-striped' id="table1">
