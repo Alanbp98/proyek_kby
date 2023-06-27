@@ -7,19 +7,19 @@
 <div class="sidebar-menu">
     <ul class="menu">
         
-        <li class="sidebar-item active ">
+        <li class="sidebar-item {{ request()->is('dashboard-donatur') ? 'active' : '' }} ">
             <a href="index.html" class='sidebar-link'>
                 <i data-feather="home" width="20"></i> 
                 <span>Dashboard</span>
             </a>
         </li>
 
-        <li class="sidebar-item  has-sub">
+        <li class="sidebar-item {{ request()->is('#') ? 'active' : '' }} has-sub">
             <a href="#" class='sidebar-link'>
                 <i data-feather="triangle" width="20"></i> 
                 <span>Data Master</span>
             </a>
-            <ul class="submenu ">
+            <ul class="submenu {{ request()->is('#') ? 'active' : '' }}">
                 <li>
                     <a href="">Data Obat</a>
                 </li>                       
@@ -32,19 +32,19 @@
             </ul>
         </li>
 
-        <li class="sidebar-item ">
+        <li class="sidebar-item {{ request()->is('#') ? 'active' : '' }}">
             <a href="#" class='sidebar-link'>
                 <i data-feather="briefcase" width="20"></i> 
                 <span>Rekap Pembelian</span>
             </a>
         </li>
                 
-        <li class="sidebar-item  has-sub">
+        <li class="sidebar-item {{ request()->is('#') ? 'active' : '' }} has-sub">
             <a href="#" class='sidebar-link'>
                 <i data-feather="file-text" width="20"></i> 
                 <span>Pengelolaan Chat</span>
             </a>                   
-            <ul class="submenu ">                        
+            <ul class="submenu {{ request()->is('#') ? 'active' : '' }}">                        
                 <li>
                     <a href="form-element-input.html">History Chat</a>
                 </li>

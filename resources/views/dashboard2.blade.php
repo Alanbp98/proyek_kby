@@ -1,12 +1,10 @@
 @extends('layouts.admin2')
 
-@section('title', 'Pegawai')
+@section('title', 'Dashboard')
 
-@section('page-title')
-<div class="page-title">
-    <h3>Dashboard Pegawai</h3>
-    <p class="text-subtitle text-muted">A good dashboard to display your statistics</p>
-</div>
+@section('breadcrumb')
+    @parent
+    <li class="breadcrumb-item">Dashboard</li>
 @endsection
 
 @section('content')

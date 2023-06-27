@@ -14,31 +14,31 @@
             </a>
         </li>
 
-        <li class="sidebar-item  has-sub">
+        <li class="sidebar-item {{ request()->is('data-obat','data-member') ? 'active' : '' }} has-sub">
             <a href="#" class='sidebar-link'>
                 <i data-feather="triangle" width="20"></i> 
                 <span>Data Master</span>
             </a>
-            <ul class="submenu ">
+            <ul class="submenu {{ request()->is('data-obat','data-member') ? 'active' : '' }}">
                 <li>
-                    <a href="">Data Obat</a>
+                    <a href="data-obat">Data Obat</a>
                 </li>                       
                 <li>                       
                 <li>
-                    <a href="">Data Member</a>
+                    <a href="data-member">Data Member</a>
                 </li>
             </ul>
         </li>
 
-        <li class="sidebar-item ">
+        <li class="sidebar-item {{ request()->is('rekap-pembelian') ? 'active' : '' }}">
             <a href="#" class='sidebar-link'>
                 <i data-feather="briefcase" width="20"></i> 
                 <span>Rekap Pembelian</span>
             </a>
         </li>
                 
-        <li class="sidebar-item {{ request()->is('member-table') ? 'active' : '' }} ">
-            <a href="member-table" class='sidebar-link'>
+        <li class="sidebar-item {{ request()->is('pengelolaan-chat') ? 'active' : '' }} ">
+            <a href="pengelolaan-chat" class='sidebar-link'>
                 <i data-feather="file-text" width="20"></i> 
                 <span>Pengelolaan Chat</span>
             </a>                  

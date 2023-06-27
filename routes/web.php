@@ -52,7 +52,15 @@ Route::get('/admin2', function () {
     return view('layouts.admin2');
 });
 
-Route::get('/member-table', function () {
-    return view('member-table');
+Route::get('/pengelolaan-chat', function () {
+    return view('pengelolaan-chat');
+});
+
+Route::get('/data-obat', function () {
+    return view('data-obat');
+});
+
+Route::get('/data-member', function () {
+    return view('data-member');
 });
 // route sementara
